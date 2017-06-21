@@ -1,0 +1,1 @@
+<li style="margin-left:15px"><img src="/templets/images/ico-1.gif"/><a style="margin-left:5px" href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]">[field:title/]</a></li>

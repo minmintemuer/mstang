@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/templets/images/rok5.css" rel="stylesheet" media="screen" type="text/css" />
+<SCRIPT type=text/javascript src="/templets/images/pic_scroll.js"></SCRIPT><style>
+.scroll_div{
+  width:870px;
+  margin:0 auto;
+  overflow:hidden;
+  white-space:nowrap;
+  background:#ffffff;
+}
+
+#scroll_begin,#scroll_end,
+#scroll_begin ul,#scroll_end ul,
+#scroll_begin ul li,#scroll_end ul li{
+  display:inline; background-color:#ECE3D2;
+}
+.scroll_div ul li a:hover{color:#8F8772;}
+
+</style>
+</head>
+<body  bgcolor="#B8A584">
+<div><center>
+{dede:include file='head.htm'/}
+<div class="main">
+<div class="content2">
+
+
+<div style="float:left; margin:10px 0 0 10px; font-weight:bold">网站公告:</div>
+<div class="annouce"> 
+<div id="scroll_div" class="scroll_div">
+  <div id="scroll_begin">
+  <ul>
+ {dede:arclist typeid='34' row='8'}<li style="margin-left:15px"><img src="/templets/images/ico-1.gif"/><a style="margin-left:5px" href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]">[field:title/]</a></li>{/dede:arclist}
+ 
+  </ul>
+  </div>
+  <div id="scroll_end"></div>
+</div>
+<script language="javascript">
+  var speed=20
+  var scroll_begin = document.getElementById("scroll_begin");
+  var scroll_end = document.getElementById("scroll_end");
+  var scroll_div = document.getElementById("scroll_div");
+  scroll_end.innerHTML=scroll_begin.innerHTML
+  function Marquee(){
+  if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0)
+  scroll_div.scrollLeft-=scroll_begin.offsetWidth
+  else
+  scroll_div.scrollLeft++
+   
+  }
+  var MyMar=setInterval(Marquee,speed)
+  scroll_div.onmouseover=function() {clearInterval(MyMar)}
+  scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+</script>
+ </div>
+<div class="clear"></div>
+
+
+<!--main1-->
+<div class="main1">
+<div class="main1_l">
+<div id="ifocus">
+	<div id="ifocus_pic">
+		<div id="ifocus_piclist" style="left:0; top:0;">
+			<ul>
+{dede:arclist typeid='35' row=4 titlelen='40' channelid='7' addfields='tupian'}
+<li><img src="[field:tupian/]"></li>
+
+{/dede:arclist}
+			</ul>
+		</div>
+		<div id="ifocus_opdiv"></div>
+		<div id="ifocus_tx">
+			<ul>
+				{dede:arclist typeid='35' row=4 titlelen='40' channelid='7'}
+<li>[field:title/]</li>
+
+{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+	<div id="ifocus_btn">
+		<ul>
+			{dede:arclist typeid='35' row=4 titlelen='40' channelid='7' addfields='anniu'}
+<li><img src="[field:anniu/]"></li>
+
+{/dede:arclist}
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="main1_m">
+<div class="main1_m_t">
+{dede:arclist row='1' titlelen='30'  typeid='36'}
+<p style="text-align:center;padding-top:20px;font-weight:bold;font-size:12px">
+<a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+<p style="text-align:left; padding:10px 10px; text-indent:2em; line-height:23px">
+<a href="[field:arcurl/]"  style="color:#020003">
+[field:description  function='cn_substr(@me,160)'/]...</a>
+<a href="[field:arcurl/]"  style="color:#B17500">[查看全文]</a></p>
+{/dede:arclist}
+</div>
+<div class="main1_m_d">
+<div class="main1_m_d_t">
+<div style="border-bottom:2px solid #74171F; height:28px; line-height:28px"><div style="float:left; margin:3px 0 0 4px"><img src="../templets/images/ico01.jpg"/></div><div style="color:#A1392E; float:left; font-size:13px; margin-left:8px; font-weight:bold">精品课程</div><div class="clear"></div></div>
+
+</div>
+<div class="main1_m_d_c"><ul>
+{dede:arclist row='9' titlelen='30' typeid='21'}
+
+<li><a href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]">[field:title/]...</a>
+<span>[field:pubdate function="MyDate('y-m-d',@me)"/]</span></li>
+		
+{/dede:arclist}
+</ul>
+</div>
+</div>
+</div>
+
+<div class="main1_r">
+<div class="main1_r_t">
+
+{dede:arclist row=1 idlist='245'}
+	<div style="border-bottom:3px solid #74171F;padding-bottom:3px; font-weight:bold; font-size:13px; width:200px; color:#9A3023; margin-top:8px;margin-bottom:8px;" align=left>
+		<img src="templets/images/ico02.jpg"/>&#160;&#160;[field:title/]
+	</div>
+
+	<div style=" width:210px; height:140px; margin:0px auto">
+		<!--<img width="200" height="128" src="templets/images/zcjs.jpg"/>-->
+		<IMG width="200" height="128" src="[field:litpic/]">
+	</div>
+	<div style="text-align:left;width:200px;  line-height:22px">　
+		[field:description  function='cn_substr(@me,160)'/]...
+		<a href="[field:arcurl/]" target="_blank" style="color:#B17500">[查看全文]</a>
+	</div>
+{/dede:arclist}
+
+
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+<!--main1_end-->
+
+<!--main2-->
+<div class="main2">
+<div class="main2_l">
+<div class="main5_t">
+<div style="float:left;padding-top:10px"><a href="/">
+	<img src="templets/images/mravel_guide.jpg"/></a></div>
+<div class="clear"></div>
+</div>
+
+<style>
+.scroll_div1{
+  width:930px;
+  margin:0 auto;
+  overflow:hidden;
+  white-space:nowrap;
+  background:#ECE3D2;padding-top:10px
+}
+
+#scroll_begin1,#scroll_end1,
+#scroll_begin1 ul,#scroll_end1 ul,
+#scroll_begin1 ul li,#scroll_end1 ul li{
+  display:inline; background-color:#ECE3D2;
+}
+
+.scroll_div1 ul li img{border:1px solid #ccc; max-height:145px;width:auto}
+.scroll_div1 ul li a:hover img{border:1px solid #8F8772;}
+
+</style>
+
+
+<div id="scroll_div1" class="scroll_div1">
+  <div id="scroll_begin1">
+  <ul>
+{dede:arclist typeid='8' row='8'}
+
+<li style="margin-left:10px;"><A title="[field:fulltitle/]" href="[field:arcurl/]" target=_blank>
+	<img src="[field:litpic/]" >
+</A>
+</li>
+{/dede:arclist}
+ 
+  </ul>
+  </div>
+  <div id="scroll_end1"></div>
+</div>
+<script language="javascript">
+  var speed=20
+  var scroll_begin1 = document.getElementById("scroll_begin1");
+  var scroll_end1 = document.getElementById("scroll_end1");
+  var scroll_div1 = document.getElementById("scroll_div1");
+  scroll_end1.innerHTML=scroll_begin1.innerHTML
+  function Marquee(){
+  if(scroll_end1.offsetWidth-scroll_div1.scrollLeft<=0)
+  scroll_div1.scrollLeft-=scroll_begin1.offsetWidth
+  else
+  scroll_div1.scrollLeft++
+   
+  }
+  var MyMar=setInterval(Marquee,speed)
+  scroll_div1.onmouseover=function() {clearInterval(MyMar)}
+  scroll_div1.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+</script>
+
+</div>
+
+
+<div class="clear"></div>
+</div>
+<!--main2_end-->
+<div class="foot">
+<ul>
+<li>友情链接：</li>
+{dede:flink row='24'/}
+
+</ul>
+</div>
+<!--flink_end-->
+{dede:include file='footer.htm' /}
+<!-- /footer -->
+</div>
+</div>
+
+<div style="margin:0 auto; width:1062px">
+<div class="bottom_l"></div>
+<div class="bottom_m"></div>
+<div class="bottom_r"></div>
+<div class="clear"></div>
+</div>
+
+</div></center>
+</body>
+</html>

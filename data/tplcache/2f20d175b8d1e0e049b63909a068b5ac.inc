@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]" target="_blank" style="color:#B17500">[查看全文]</a>

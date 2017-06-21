@@ -1,0 +1,1 @@
+INSERT INTO `dede_flink` VALUES('10','1','https://tangtaoweb.taobao.com','ฬฦฬีอ๘ย็นคื๗สา','','','','1481009185','1','2');

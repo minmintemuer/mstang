@@ -1,0 +1,4 @@
+INSERT INTO `dede_addonmusic` VALUES('236','35','','','127.0.0.1','/templets/images/1.jpg','/templets/images/btn_01.jpg','');
+INSERT INTO `dede_addonmusic` VALUES('237','35','','','127.0.0.1','/templets/images/2.jpg','/templets/images/btn_02.jpg','');
+INSERT INTO `dede_addonmusic` VALUES('238','35','','','127.0.0.1','/templets/images/4.jpg','/templets/images/btn_04.jpg','');
+INSERT INTO `dede_addonmusic` VALUES('239','35','','','127.0.0.1','/templets/images/3.jpg','/templets/images/btn_03.jpg','');

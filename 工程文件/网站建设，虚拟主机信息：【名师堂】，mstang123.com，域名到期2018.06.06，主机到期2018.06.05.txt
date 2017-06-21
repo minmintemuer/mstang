@@ -1,0 +1,40 @@
+
+
+******************************************************************
+网站建设：【名师堂】
+
+【域名信息】
+域名地址：mstang123.com
+域名注册：万网，sdfwegweg****@126.com，2017.06.06
+
+dns已经修改为dnspod：sadwfgweg*******@126.com
+
+
+【虚拟主机信息】香港虚拟主机：300M空间 + 100M数据库
+
+虚拟主机购买时间：2017.06.06 23-30-47
+虚拟主机购买来源：淘宝卖家“a807522397”，店铺地址https://99aiji.taobao.com/，https://item.taobao.com/item.htm?spm=a230r.1.14.25.uUNfSK&id=525687955466&ns=1&abbucket=4#detail
+
+
+管理地址：http://tdyun.com/
+用户名：ailen99
+密码：Afafw25dd
+
+常用邮箱：821233474@qq.com
+手机号码：15520016175
+QQ号码：821233474
+
+默认主页地址：ailen99.hktd28t.my0w.com
+
+FTP地址：ftp.hktd28t.99aiji.net
+用户名：ailen99
+密　码：F4BJX80X8R2G
+
+数据库地址：hktd28t.99aiji.net
+数据库名称：ailen99mysql
+数据库用户名：ailen99mysql
+数据库密码：A3281AA
+
+
+
+******************************************************************
